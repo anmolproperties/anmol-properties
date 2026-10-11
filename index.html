@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anmol Properties | Ghaziabad</title>
+
+  <meta name="description"
+        content="Explore residential and commercial properties for sale and rent in Raj Nagar Extension, Ghaziabad. Contact Anmol Properties on WhatsApp or phone.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 16px 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      color: #174a83;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #d4a64a;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    nav a {
+      color: #334155;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #102d50, #245b91);
+      color: white;
+      text-align: center;
+      padding: 85px 15px;
+    }
+
+    .eyebrow {
+      color: #f5ce78;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .hero h1 {
+      font-size: 43px;
+      line-height: 1.2;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #e2eaf5;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 7px;
+      background: #174a83;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 3px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .btn-gold {
+      background: #e5b95d;
+      color: #172033;
+    }
+
+    .btn-white {
+      background: white;
+      color: #174a83;
+    }
+
+    section {
+      padding: 60px 0;
+      scroll-margin-top: 20px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .section-heading h2 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .muted {
+      color: #64748b;
+    }
+
+    .about-content {
+      max-width: 780px;
+      text-align: center;
+      margin: auto;
+    }
+
+    .about-content p {
+      margin-bottom: 12px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .category {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .category .icon {
+      font-size: 38px;
+    }
+
+    .category h3 {
+      margin: 10px 0;
+    }
+
+    .properties {
+      background: #edf3fa;
+    }
+
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .property-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e0e7ef;
+      box-shadow: 0 4px 14px #0f274010;
+    }
+
+    .property-card img {
+      width: 100%;
+      height: 195px;
+      object-fit: cover;
+      display: block;
+      background: #dbeafe;
+    }
+
+    .property-info {
+      padding: 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e1edff;
+      color: #174a83;
+      border-radius: 5px;
+      padding: 4px 8px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .property-info h3 {
+      margin: 10px 0 5px;
+    }
+
+    .property-info p {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .property-info .btn {
+      width: 100%;
+      margin: 10px 0 0;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .why-item {
+      background: white;
+      padding: 20px;
+      border-radius: 9px;
+      border-left: 4px solid #d4a64a;
+    }
+
+    .contact {
+      background: #102d50;
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #e0eaf5;
+      margin: 12px 0;
+    }
+
+    .contact-number {
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .contact .btn {
+      min-width: 150px;
+    }
+
+    .location {
+      background: white;
+      text-align: center;
+    }
+
+    footer {
+      background: #091b30;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 23px 12px;
+      font-size: 13px;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 760px) {
+      .navbar {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 10px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 65px 12px;
+      }
+
+      .hero h1 {
+        font-size: 33px;
+      }
+
+      .section-heading h2 {
+        font-size: 26px;
+      }
+
+      .categories,
+      .property-grid,
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .property-card img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">ANMOL <span>PROPERTIES</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#properties">Properties</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="eyebrow">YOUR PROPERTY PARTNER</div>
+
+      <h1>Find Your Dream Property<br>
+      in Ghaziabad</h1>
+
+      <p>
+        Discover residential and commercial properties
+        in Raj Nagar Extension. Whether you want to buy,
+        sell or rent, Anmol Properties is here to help.
+      </p>
+
+      <a class="btn btn-gold" href="#properties">
+        Explore Properties
+      </a>
+
+      <a class="btn btn-white"
+         href="https://wa.me/917838564941?text=Hello%20Anmol%20Properties%2C%20I%20am%20interested%20in%20a%20property.">
+        WhatsApp Us
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-content">
+      <div class="section-heading">
+        <h2>About Anmol Properties</h2>
+        <p class="muted">
+          Your local property search partner
+        </p>
+      </div>
+
+      <p>
+        Welcome to Anmol Properties, serving customers
+        looking for residential and commercial property
+        opportunities in Raj Nagar Extension, Ghaziabad.
+      </p>
+
+      <p>
+        Our aim is to help you explore suitable property
+        options, understand your choices and connect with
+        us easily for your property requirements.
+      </p>
+
+      <a class="btn" href="#contact">Talk to Us</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Our Property Services</h2>
+        <p class="muted">
+          Property solutions for different needs
+        </p>
+      </div>
+
+      <div class="categories">
+        <div class="category">
+          <div class="icon">🏢</div>
+          <h3>Residential Property</h3>
+          <p class="muted">
+            Explore flats and homes for buying or renting.
+          </p>
+        </div>
+
+        <div class="category">
+          <div class="icon">🏬</div>
+          <h3>Commercial Property</h3>
+          <p class="muted">
+            Explore shops, offices and commercial spaces.
+          </p>
+        </div>
+
+        <div class="category">
+          <div class="icon">🤝</div>
+          <h3>Buy, Sell & Rent</h3>
+          <p class="muted">
+            Contact us to discuss your property needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTY LISTINGS -->
+  <section class="properties" id="properties">
+    <div class="container">
+
+      <div class="section-heading">
+        <h2>Featured Properties</h2>
+        <p class="muted">
+          Explore property categories in our service area.
+          Contact us for current availability.
+        </p>
+      </div>
+
+      <div class="property-grid">
+
+        <article class="property-card">
+          <img
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+            alt="Example residential house">
+
+          <div class="property-info">
+            <span class="badge">RESIDENTIAL</span>
+            <h3>Residential Homes</h3>
+            <p class="muted">
+              Raj Nagar Extension, Ghaziabad
+            </p>
+            <p>
+              Looking for a home? Ask us about available
+              residential properties.
+            </p>
+
+            <a class="btn"
+               href="https://wa.me/917838564941?text=Hello%2C%20I%20am%20looking%20for%20a%20residential%20property%20in%20Raj%20Nagar%20Extension.">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+            alt="Example modern apartment interior">
+
+          <div class="property-info">
+            <span class="badge">FLATS & RENTALS</span>
+            <h3>Flats for Rent</h3>
+            <p class="muted">
+              Raj Nagar Extension, Ghaziabad
+            </p>
+            <p>
+              Tell us your budget and requirements to
+              enquire about rental options.
+            </p>
+
+            <a class="btn"
+               href="https://wa.me/917838564941?text=Hello%2C%20I%20am%20looking%20for%20a%20flat%20for%20rent%20in%20Raj%20Nagar%20Extension.">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <article class="property-card">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+            alt="Example commercial building">
+
+          <div class="property-info">
+            <span class="badge">COMMERCIAL</span>
+            <h3>Shops & Offices</h3>
+            <p class="muted">
+              Ghaziabad and nearby areas
+            </p>
+            <p>
+              Enquire about commercial spaces for
+              your business requirements.
+            </p>
+
+            <a class="btn"
+               href="https://wa.me/917838564941?text=Hello%2C%20I%20am%20looking%20for%20commercial%20property%20in%20Ghaziabad.">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why-us">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Why Contact Anmol Properties?</h2>
+        <p class="muted">
+          A straightforward approach to your property search
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>📍 Local Focus</h3>
+          <p>
+            Focused on property enquiries in Raj Nagar
+            Extension and Ghaziabad.
+          </p>
+        </div>
+
+        <div class="why-item">
+          <h3>🏠 Multiple Property Types</h3>
+          <p>
+            Residential and commercial property enquiries
+            in one place.
+          </p>
+        </div>
+
+        <div class="why-item">
+          <h3>📱 Easy Communication</h3>
+          <p>
+            Contact us directly by phone or WhatsApp.
+          </p>
+        </div>
+
+        <div class="why-item">
+          <h3>🤝 Personal Assistance</h3>
+          <p>
+            Share your requirements so we can discuss
+            suitable available options.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="eyebrow">LET'S CONNECT</div>
+
+      <h2 style="font-size:30px; margin-top:12px;">
+        Find Your Next Property
+      </h2>
+
+      <p>
+        Tell us what you're looking for.
+        We would be happy to discuss your requirements.
+      </p>
+
+      <p class="contact-number">
+        +91 78385 64941
+      </p>
+
+      <a class="btn btn-gold"
+         href="https://wa.me/917838564941?text=Hello%20Anmol%20Properties%2C%20I%20would%20like%20to%20enquire%20about%20a%20property.">
+        Chat on WhatsApp
+      </a>
+
+      <a class="btn btn-white"
+         href="tel:+917838564941">
+        Call Now
+      </a>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Our Service Area</h2>
+        <p class="muted">
+          Raj Nagar Extension, Ghaziabad, Uttar Pradesh
+        </p>
+
+        <a class="btn"
+           href="https://www.google.com/maps/search/?api=1&query=Raj+Nagar+Extension+Ghaziabad">
+          View Area on Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>Anmol Properties</strong></p>
+  <p>Residential & Commercial Property Enquiries</p>
+  <p>Raj Nagar Extension, Ghaziabad</p>
+  <p>Phone: +91 78385 64941</p>
+  <p>© 2026 Anmol Properties. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
